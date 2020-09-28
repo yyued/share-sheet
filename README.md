@@ -1,20 +1,26 @@
 # share-sheet
 
-Share Sheet 是一个基于 Vue.js 的用于 Web 打开 APP 客户端的一体化方案，兼容 iOS 与 Android，支持微信开放标签
+Share Sheet 是一个基于 Vue.js 的用于 Web 打开 APP 客户端的一体化方案，兼容 iOS 与 Android，支持微信开放标签 `<wx-open-launch-app>`
+
+![npm](https://img.shields.io/badge/npm-0.0.2-brightgreen.svg)
+
+* 唤起 APP 的逻辑详见 [yypkg/appCall](https://yypkg.github.io/doc.html#appcall)
+* UI 组件建议通过 `git clone` 直接放到项目中使用，如使用 npm 安装，请配置 vue loader；
 
 
-<img src="https://iovo-oss.yy.com/upload/1601195469104F8fovabDL.jpeg" width="350">
+## DEOM
 
-## 安装
+<img src="https://iovo-oss.yy.com/upload/1601195469104F8fovabDL.jpeg" width="350" border="1">
 
-```
-yarn add share-sheet
-```
 
 ## 使用
 
+```
+git clone https://github.com/yyued/share-sheet.git
+```
+
 ```js
-import shareSheet from 'share-sheet'
+import shareSheet from '@/components/share-sheet'
 Vue.use(shareSheet)
 
 // 初始化
@@ -59,7 +65,6 @@ this.$shareSheet({
 | `fallbackUrl`  | 空 | 否 | fallback 链接，当打开 APP 失败时跳转到该链接 |
 
 
-唤起 APP 的逻辑详见 [yypkg/appCall](https://yypkg.github.io/doc.html#appcall)
 
 
 
