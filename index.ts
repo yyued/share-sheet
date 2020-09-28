@@ -5,10 +5,11 @@ export default {
   install () {
     // 允许微信开放标签
     Vue.config.ignoredElements = [
-      'wx-open-launch-app',
+      'wx-open-launch-app'
     ]
-    let vmShareSheet = null
-    Vue.prototype.$shareSheet = (options) => {
+    let vmShareSheet: any = null
+    Vue.prototype.$shareSheet = (options: { [key: string]: any }) => {
+      console.log(options)
       // 如存在，则覆盖
       const elementShareSheet = document.querySelector('.share-sheet')
       if (elementShareSheet && vmShareSheet) {

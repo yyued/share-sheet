@@ -1,6 +1,6 @@
 {
   "name": "share-sheet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Share Sheet 是一个基于 Vue.js 的用于 Web 打开 APP 客户端的一体化方案，兼容 iOS 与 Android，支持微信开放标签",
   "main": "index.js",
   "repository": {

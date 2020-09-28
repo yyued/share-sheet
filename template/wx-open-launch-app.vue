@@ -7,8 +7,8 @@
       @ready="launchAppReady"
       @launch="launchAppSuccess"
       @error="launchAppError"
-      :appid="wechatOpenTag.appid"
-      :extinfo="wechatOpenTag.extinfo"
+      :appid="wechatOpenTag.appID"
+      :extinfo="wechatOpenTag.extInfo"
     >
       <script type="text/wxtag-template">
         <style>.button {width: 100%; height: {{buttonHeight}}px; opacity: 0; }</style>
